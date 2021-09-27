@@ -1,0 +1,179 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  list-style: none;
+  margin: -20px;
+  background: #1f2937;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.navigation a:hover {
+  background: #1565c0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.landing_section {
+  display: flex;
+  flex-flow: row wrap;
+  background: #1f2937;
+
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 -20px;
+  padding: 50px 50px 50px 25px;
+}
+
+.landing_text {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.landing_text h1 {
+  max-width: 400px;
+  color: whitesmoke;
+}
+
+.landing_text h4 {
+  max-width: 400px;
+  color: #e5e7eb;
+}
+
+.landing_image {
+  padding-right: 50px;
+}
+
+.signup_button {
+  width: 100px;
+  height: 30px;
+
+  background-color: #3882f6;
+  color: white;
+
+  border-radius: 8px;
+  border: 1px white;
+}
+
+.info_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_section h2 {
+  text-align: center;
+}
+
+.pic_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  margin: 50px;
+}
+
+.pic_cards .card h4 {
+  max-width: 100px;
+}
+
+.quote_section {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  margin: -10px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote_section h2 {
+  max-width: 800px;
+  font-size: 32px;
+  color: #1f2937;
+}
+
+.quote_section h3 {
+  margin-left: 100px;
+  margin-top: -30px;
+}
+
+.blue_signup_card {
+  display: flex;
+  flex-direction: row;
+
+  margin: 10px;
+  margin-top: 30px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background-color: #3882f6;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blue_signup_card button {
+  width: 100px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  border-color: white;
+  background-color: #3882f6;
+  color: antiquewhite;
+
+  margin-left: -100px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+
+  margin: -10px;
+  margin-top: 20px;
+
+  color: white;
+}
