@@ -1,6 +1,7 @@
 function play() {
   let i = 0;
 
+  console.log("Let the Game Begin!");
   while (i < 5) {
     let playerTurn = prompt("Enter Rock, Paper or Scissor:");
     makeATurn(playerTurn);
