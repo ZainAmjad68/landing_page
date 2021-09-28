@@ -1,8 +1,10 @@
 function play() {
   let i = 0;
+
   while (i < 5) {
     let playerTurn = window.prompt("Enter Rock, Paper or Scissor:");
     makeATurn(playerTurn);
+    i++;
   }
 }
 
@@ -48,4 +50,4 @@ function makeATurn(playerTurn) {
   console.log("The Winner is: ", result);
 }
 
-play();
+document.getElementById("rpc").addEventListener("click", play);
