@@ -50,6 +50,5 @@ function makeATurn(playerTurn) {
   console.log("The Winner is: ", result);
 }
 
-window.onload = function () {
-  document.getElementById("rpc").addEventListener("click", play);
-};
+let button = document.querySelector("#rpc");
+button.addEventListener("click", play);
