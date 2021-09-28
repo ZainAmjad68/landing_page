@@ -2,7 +2,7 @@ function play() {
   let i = 0;
 
   while (i < 5) {
-    let playerTurn = window.prompt("Enter Rock, Paper or Scissor:");
+    let playerTurn = prompt("Enter Rock, Paper or Scissor:");
     makeATurn(playerTurn);
     i++;
   }
