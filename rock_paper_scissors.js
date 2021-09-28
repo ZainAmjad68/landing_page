@@ -1,5 +1,3 @@
-console.log("I come to the JS file");
-
 function play() {
   let i = 0;
   console.log("Let the Game Begin!");
@@ -41,15 +39,15 @@ function makeATurn(playerTurn) {
   resultMap[2][1] = 2;
   resultMap[2][2] = 0;
 
-  let result = resultMap[item][playerTurn]
-    ? 1
-    : "Player"
-    ? 2
-    : "Computer"
-    ? 0
-    : "Tie";
+  let result = resultMap[item][playerTurn];
 
-  console.log("The Winner is: ", result);
+  if (result === 1) {
+    console.log("The Winner is Player!");
+  } else if (result === 2) {
+    console.log("The Winner is Computer!");
+  } else {
+    console.log("Turn Ended in a Tie!");
+  }
 }
 
 let button = document.querySelector("#rpc");
