@@ -47,3 +47,5 @@ function makeATurn(playerTurn) {
 
   console.log("The Winner is: ", result);
 }
+
+play();
