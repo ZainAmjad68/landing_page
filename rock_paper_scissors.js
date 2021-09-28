@@ -1,3 +1,5 @@
+console.log("I come to the JS file");
+
 function play() {
   let i = 0;
   console.log("Let the Game Begin!");
