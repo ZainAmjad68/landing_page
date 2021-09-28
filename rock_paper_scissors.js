@@ -1,11 +1,13 @@
 function play() {
   let i = 0;
 
-  while (i < 5) {
-    let playerTurn = prompt("Enter Rock, Paper or Scissor:");
-    makeATurn(playerTurn);
-    i++;
-  }
+  window.onload = function () {
+    while (i < 5) {
+      let playerTurn = prompt("Enter Rock, Paper or Scissor:");
+      makeATurn(playerTurn);
+      i++;
+    }
+  };
 }
 
 function makeATurn(playerTurn) {
